@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .c-button {
+            padding: 50px 50px;
+            border: 20;
+            border-radius: 30px;
+        }
+    </style>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="fgh">Счет: 0</h1>
+    <button class="c-button" id="button">клик</button>
+    <script src="script.js"></script>
+    <script>
+
+        let kol = 0;
+
+        const click = () => {
+            document.getElementById('fgh').innerHTML = `Счет: ${kol += 1}`;
+        };
+
+        document.getElementById("button").addEventListener("click", click);
+    </script>
+</body>
+</html>
